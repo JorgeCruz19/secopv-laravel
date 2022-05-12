@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    {{-- <link href="{{ asset('css/styles.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -124,7 +124,7 @@
 											text-sm
 											font-medium
 										"
-										href="#about"
+										href="/#about"
 									>
 										Acerca
 									</a>
@@ -137,7 +137,7 @@
 											text-sm
 											font-medium
 										"
-										href="#services"
+										href="/#services"
 									>
 										Servicios
 									</a>
@@ -150,7 +150,7 @@
 											text-sm
 											font-medium
 										"
-										href="#contact"
+										href="/#contact"
 									>
 										Contacto
 									</a>
@@ -214,11 +214,11 @@
 								text-base
 								font-medium
 							"
-							href="#"
+							href="/"
 						>
 							Inicio
 						</a>
-						<a class="text-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#about">
+						<a class="text-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="/#about">
 							Acerca
 						</a>
 						<a
@@ -231,7 +231,7 @@
 								text-base
 								font-medium
 							"
-							href="#services"
+							href="/#services"
 						>
 							Servicios
 						</a>
@@ -245,7 +245,7 @@
 								text-base
 								font-medium
 							"
-							href="#contact"
+							href="/#contact"
 						>
 							Contacto
 						</a>

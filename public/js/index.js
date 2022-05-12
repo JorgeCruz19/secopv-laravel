@@ -40,25 +40,27 @@ function changeAtiveTab(event, tabID) {
 }
 
 /* Form */
-form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    fetch("https://formsubmit.co/ajax/c7f8b3c6c59a4b2269d3fc6056134992", {
-        method: "POST",
-        body: new FormData(e.target),
-    })
-        .then((res) => (res.ok ? res.json() : Promise.reject(res)))
-        .then((json) => {
-            console.log(json);
-            Swal.fire({
-                icon: "success",
-                title: "Se envío correctamente",
-            });
+if (form) {
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        fetch("https://formsubmit.co/ajax/c7f8b3c6c59a4b2269d3fc6056134992", {
+            method: "POST",
+            body: new FormData(e.target),
         })
-        .catch((err) => {
-            Swal.fire({
-                icon: "error",
-                title: "Hubo un error, intentelo de nuevo",
+            .then((res) => (res.ok ? res.json() : Promise.reject(res)))
+            .then((json) => {
+                console.log(json);
+                Swal.fire({
+                    icon: "success",
+                    title: "Se envío correctamente",
+                });
+            })
+            .catch((err) => {
+                Swal.fire({
+                    icon: "error",
+                    title: "Hubo un error, intentelo de nuevo",
+                });
+                console.log(err);
             });
-            console.log(err);
-        });
-});
+    });
+}
